@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{E5C00A68-E6DB-FEA3-938C-F34D364EA738}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_0;UNITY_4_6;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>D:/unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>D:/unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\MyDemo\scripts\button.cs" />
+     <Compile Include="Assets\MyDemo\scripts\camera\cursor_camera.cs" />
+     <Compile Include="Assets\MyDemo\scripts\edit.cs" />
+     <Compile Include="Assets\MyDemo\scripts\game_scene_control.cs" />
+     <Compile Include="Assets\MyDemo\scripts\gui_game.cs" />
+     <Compile Include="Assets\MyDemo\scripts\gui_login.cs" />
+     <Compile Include="Assets\MyDemo\scripts\login_scene_control.cs" />
+     <Compile Include="Assets\MyDemo\scripts\player_controller.cs" />
+     <Compile Include="Assets\MyDemo\scripts\scene_control.cs" />
+     <Compile Include="Assets\MyDemo\scripts\spawn\spawn_hero.cs" />
+     <Compile Include="Assets\Topdown Kit\Effect\Effects_01\Prefebs\DestroyForTime.cs" />
+     <Compile Include="Assets\Topdown Kit\Effect\Effects_01\Prefebs\FollowTarget.cs" />
+     <Compile Include="Assets\Topdown Kit\Effect\Effects_02\AnimationSpeed.cs" />
+     <Compile Include="Assets\Topdown Kit\Effect\Effects_02\ScrollUV.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\CharacterCreation\ButtonOK.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\CharacterCreation\ButtonSelected.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\CharacterCreation\Entername.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\CharacterCreation\SelectCharacter.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Enemy\AnimationManagerEnemy.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Enemy\DetectArea.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Enemy\DropItem.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Enemy\EnemyController.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Enemy\EnemyStatus.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Enemy\Monster_Data.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\GUI\BottomBar.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\GUI\CommandMenu.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\GUI\DeadWindow.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\GUI\EnemyHP.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\GUI\HeroStatusBar.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\GUI\LogText.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\GUI\MessageBox.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\GUI\Minimap.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\GUI\MinimapSign.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\GUI\QuestWindow.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\GUI\SaveWindow.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Menu\GUI_Calculate.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Menu\GUI_Menu.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Menu\Item_Data.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Menu\Item_Obj.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Menu\LookAtCamera.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Menu\Quest_Data.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Misc\DisableFaceCam.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Misc\GameSetting.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Misc\MinimapSignSetup.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Misc\SoundManager.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Misc\Spawner.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Misc\TextDamage.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Misc\TextFilter.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Npc\NpcSetup.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Npc\ShopItemlist.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Player\Camera\MinimapCamera.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Player\Camera\MouseOrbit.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Player\Controller\AnimationManager.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Player\Controller\AreaSkillCursor.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Player\Controller\HeroController.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Player\Controller\PlayerSkill.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Player\Controller\PlayerStatus.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Player\Controller\SkillArea.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Player\Controller\SpawnPointHero.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\SaveData\CharacterData.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Title\AlphaText.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Title\ControlTitleScene.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Title\LoadGameButton.cs" />
+     <Compile Include="Assets\Topdown Kit\Script\Title\NewGameButton.cs" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
+     <None Include="Assets\Topdown Kit\Model\Model Enemy\Wolf\Wolf_Animation.txt" />
+     <None Include="Assets\Topdown Kit\Model\Model Character\Swordman\Swordman_Animation.txt" />
+     <None Include="Assets\Topdown Kit\Shader\Transparent_Outline.shader" />
+     <None Include="Assets\Topdown Kit\Shader\MaskShader.shader" />
+     <None Include="Assets\MyDemo\Model\Model Character\Swordman\Swordman_Animation.txt" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
+     <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+     <None Include="Assets\Topdown Kit\Model\Model Character\Magician\Magician_Animation.txt" />
+     <None Include="Assets\MyDemo\Model\Model Enemy\Wolf\Wolf_Animation.txt" />
+     <None Include="Assets\MyDemo\Model\Model Character\Magician\Magician_Animation.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>D:/unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{F130E503-31B6-CD88-696B-20575B7F4CFA}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
